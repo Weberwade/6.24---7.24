@@ -1,0 +1,190 @@
+body {
+    min-width: 0;
+}
+// 导航最外部容器
+.bar-outer{
+    width: 100%;
+    background-color: #000;
+}
+
+// 导航外部容器
+.top-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 48px;
+    background-color: #000;
+    padding: 0 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+// 设置左侧导航图标
+.left-menu {
+
+    // 导航图标样式
+    .menu-icon {
+        width: 18px;
+        height: 48px;
+        position: relative;
+
+        // 导航线
+        li {
+            width: 18px;
+            height: 1px;
+            background-color: #fff;
+            margin-bottom: 5px;
+            position: absolute;
+            transform-origin: left;
+            transition: all 0.5s;
+        }
+
+        li:nth-of-type(1) {
+            top: 17px;
+        }
+
+        li:nth-of-type(2) {
+            top: 22px;
+
+        }
+
+        li:nth-of-type(3) {
+            top: 27px;
+        }
+
+        &:active {
+            li:nth-of-type(1) {
+                transform: rotateZ(35deg);
+            }
+
+            li:nth-of-type(2) {
+                opacity: 0;
+            }
+
+            li:nth-of-type(3) {
+                transform: rotateZ(-35deg);
+            }
+        }
+    }
+
+    // 下拉菜单
+    .nav {
+        position: absolute;
+        top: 48px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        color: #fff;
+        padding: 30px 50px;
+        display: none;
+
+        li {
+            border-bottom: 1px solid #dbdbdb;
+            line-height: 40px;
+
+            a {
+                display: block;
+                color: #fff;
+                font-size: 14px;
+                line-height: 40px;
+            }
+
+            a:hover {
+                color: #dbdbdb;
+            }
+        }
+
+        li:last-of-type {
+            display: flex;
+
+            a {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    // 下拉菜单显示
+    &:active {
+        .nav {
+            display: block;
+        }
+    }
+}
+
+// 设置logo
+.logo {
+    a {
+        text-indent: -999999;
+        display: block;
+        background-image: url(../img/17/dff63979.sprites-index@2x.png);
+        background-size: 400px 400px;
+        width: 122px;
+        height: 32px;
+    }
+}
+
+// 右侧user
+.user-info {
+    a {
+        color: #fff;
+    }
+}
+
+// 设置媒体查询
+@media only screen {
+
+    // 断点
+    @media (min-width:768px) {
+
+        // 设置断点以后的导航条
+        .top-bar {
+            // 设置logo
+            .logo {
+                order: 1;
+            }
+
+            // 设置菜单
+            .left-menu {
+                order: 2;
+                flex-grow: 1;
+                // 设置菜单图标
+                .menu-icon{
+                    display: none;
+                }
+                // 下拉框显示
+                .nav{
+                    display: flex;
+                    position: static;
+                    padding: 0;
+                    justify-content: space-around;
+                    li{
+                        justify-content: center;
+                        border-bottom: none;
+                        a{
+                            line-height: 48px;
+                            text-align: center;
+                        }
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            // 设置用户信息
+            .user-info {
+                order: 3;
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+}

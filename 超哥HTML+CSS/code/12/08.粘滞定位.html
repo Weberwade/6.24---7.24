@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset/reset.css">
+    <style>
+        body {
+            background-color: #bfa;
+            height: 3000px;
+        }
+
+        /* 设置导航容器 */
+        #outer {
+            /* 设置高度 */
+            width: 1208px;
+            /* 设置高度 */
+            height: 48px;
+            /* 垂直居中 */
+            /* line-height: 48px; */
+            /* 背景颜色 */
+            background-color: #E8E7E3;
+            /* display: inline-block; */
+            margin: 30px auto;
+
+            position: sticky;
+            top: 10px;
+        }
+
+        /* 设置li */
+        .inner {
+            /* 让所有的li浮动，水平排列 */
+            float: left;
+            /* padding: 0 38px; */
+        }
+
+        /* 设置a标签中的所有div */
+        .box1 {
+            height: 48px;
+            line-height: 48px;
+            /* 设置字体颜色 */
+            color: #898989;
+            padding: 0 52px;
+            /* width: 100%; */
+            /* height: 100%; */
+        }
+
+        /* 设置鼠标移入效果 */
+        .box1:hover {
+            background-color: #3F3F3F;
+            color: #D7D6D2;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="outer">
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>HTML/CSS</div>
+            </a>
+        </li>
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>Brower Side</div>
+            </a>
+        </li>
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>Server Side</div>
+            </a>
+        </li>
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>Programming</div>
+            </a>
+        </li>
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>XML</div>
+            </a>
+        </li>
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>Web Building</div>
+            </a>
+        </li>
+        <li class="inner">
+            <a href="#">
+                <div class='box1'>Reference</div>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

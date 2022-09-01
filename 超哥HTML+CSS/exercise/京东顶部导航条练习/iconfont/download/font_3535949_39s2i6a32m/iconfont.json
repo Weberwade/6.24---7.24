@@ -1,0 +1,30 @@
+{
+  "id": "3535949",
+  "name": "京东导航",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1664368",
+      "name": "下箭头",
+      "font_class": "xiajiantou1",
+      "unicode": "e731",
+      "unicode_decimal": 59185
+    },
+    {
+      "icon_id": "630092",
+      "name": "向下箭头",
+      "font_class": "xiangxiajiantou",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "15722707",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

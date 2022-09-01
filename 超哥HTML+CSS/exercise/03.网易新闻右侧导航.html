@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/reset/reset.css">
+    <style>
+        body{
+            background-color: #bfa;
+        }
+        /* 修改外层容器样式 */
+        #outer {
+            width: 300px;
+            height: 324px;
+            margin: 27px auto;
+            background-color: #fefefe;
+            /* border-top: 1px solid #DDDDDD; */
+        }
+        /* 定义标题栏大小 */
+        #title {
+            border-top: 1px solid #DDDDDD;
+            height: 41px;
+            line-height: 41px;
+        }
+        /* 设置标题文字外层容器 */
+        #title-name {
+            width: 32px;
+            height: 41px;
+            display: block;
+            border-top: 1px solid #F34540;
+            margin-top: -1px;
+        }
+        /* 设置标题文字大小 */
+        #name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+        }
+        /* 设置标题鼠标移入效果 */
+        #name:hover {
+            color: #f34540;
+        }
+        #content-img{
+            width: 300px;
+            height: 150px;
+        }
+        /* 设置图片大小 */
+        #news-img {
+            width: 300px;
+            height: 150px;
+        }
+        /* 设置图片中文字 */
+        #img-title{
+            font-size: 16px;
+            color: #fff;
+            font-weight: bold;
+            /* 移动文字位置 */
+            margin-top: -40px;
+            padding-left: 30px;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+        }
+        /* 设置内容区大小 */
+        #content {
+            width: 300px;
+            height: 120px;
+            margin-top: 12px;
+        }
+        /* 设置每一行内容区的大小及样式 */
+        .item {
+            color: #DDDDDD;
+            font-size: 14px;
+            width: 300px;
+            height: 30px;
+            line-height: 30px;
+            list-style-type: square;
+            margin-left: 15px;
+        }
+        /* 设置a标签字体颜色 */
+        a:visited {
+            color: #666;
+        }
+        /* 设置鼠标移入效果 */
+        a:hover {
+            color: #f34540;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 新闻外层容器 -->
+    <div id="outer">
+        <!-- 新闻标题容器 -->
+        <div id="title">
+            <h2 id="title-name">
+                <a href="#" id="name">体育</a>
+            </h2>
+        </div>
+        <!-- 新闻图片容器 -->
+        <div id="content-img">
+            <a href="#">
+                <img id="news-img" src="./content/fcbebe7cj00redtog0033c000go00b4c.webp">
+                <h3 id="img-title">70岁了，你还能踢球吗？</h3>
+            </a>
+        </div>
+        <!-- 文字内容容器 -->
+        <ul id="content">
+            <li class="item">
+                <a href="#">
+                    卧底真实飞盘局 我发现了事情的真相
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    这种古典"灵活死胖子" 真是不招NBA的待见
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    珠宝比战绩更耀眼，东北老妹儿怎么了
+                </a>
+            </li>
+            <li class="item">
+                <a href="#">
+                    眼看着布伦森走，独行侠后悔吗？
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

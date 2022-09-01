@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../CSS/reset/reset.css">
+    <style>
+        body{
+            background-color: #bfa;
+        }
+        /* 设置外部容器 */
+        .outer {
+            width: 100%;
+            height: 30px;
+            background-color: #E3E4E5;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* 设置内部容器 */
+        .inner {
+            width: 1190px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+
+        /* 左侧地址 */
+        .left-address {
+            float: left;
+            position: relative;
+        }
+
+        /* 设置左侧内部a标签 */
+        .left-address-a{
+            display: block;
+            width: 42px;
+            height: 28px;
+            text-align: center;
+            border: 1px solid #E3E4E5;
+            padding: 0 7px;
+            position: relative;
+            z-index: 99;
+        }
+        
+        /* 设置左侧地址字体图标 */
+        .left-address-a > i{
+            font-size: 14px;
+            color: #F10215;
+        } 
+
+        /* 设置左侧地址字体 */
+        .left-address-a > span{
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* 设置左侧地址字体hover效果 */
+        .left-address-a > span:hover{
+            color: #F10215;
+        }
+        
+        /* 左侧地址栏下拉框 */
+        .all-address{
+            width: 300px;
+            height: 400px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(204, 204, 204);
+            position: absolute;
+            left: 0px;
+            top: 30px;
+            /* top: 31px; */
+            display: none;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            
+        }
+        
+        /* 设置让左侧下拉框出现 */
+        .left-address:hover .all-address{
+            display: block;
+        }
+        
+        /* 设置左侧a标签移入效果 */
+        .left-address:hover .left-address-a{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(204, 204, 204);
+            padding-bottom: 2px;
+            border-bottom: none;
+            z-index: 2;
+        }
+        /* 右侧导航 */
+        .right-nav {
+            float: right;
+        }
+
+        /* 右侧导航内隔断符号 */
+        .spaces{
+            width: 1px;
+            height: 10px;
+            background-color: #ccc;
+            margin: 11px 5px 0px 5px;
+        }
+
+        /* 右侧导航内li的设置 */
+        .right-nav>li {
+            float: left;
+        }
+
+        /* 设置带有内容的li */
+        .tap{
+            font-size: 12px;
+            padding: 0 5px;
+        }
+        /* 右侧导航内字体图标效果 */
+        .fonts{
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* 设置右侧导航字体所有字体 */
+        .tap>a,
+        .tap>div,
+        .tap>div>a{
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* 设置带颜色的字体 */
+        .tap>a:hover,
+        .tap .heightlight{
+            color: #f00;
+        }
+
+        .myjd{
+            position: relative;
+            padding: 0;
+        }
+        
+        /* 设置下拉框区域 */
+
+        /* 我的京东 */
+        .myjd-top{
+            position: relative;
+            border: 1px solid transparent;
+            padding: 0 5px;
+        }
+
+        /* 我的京东下拉框 */
+        .myjd-bottom{
+            width: 280px;
+            height: 200px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            left: 0px;
+            top: 30px;
+            border: 1px solid rgb(204, 204, 204);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            z-index: 1;
+            display: none; 
+        }
+
+        /* 我的京东字体背景变化 */
+        .myjd:hover .myjd-top{
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(204, 204, 204);
+            border-bottom: none;
+            padding: 0 5px;
+            z-index: 2;
+        }
+
+        /* 我的京东下拉框出现 */
+        .myjd:hover .myjd-bottom{
+            display: block;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- 外部容器 -->
+    <div class="outer">
+        <!-- 导航条内部容器 -->
+        <div class="inner">
+            <!-- 左侧地址 -->
+            <div class="left-address">
+                <!-- a标签包含 -->
+                <a href="#" class="left-address-a">
+                    <!-- 文字图标 -->
+                    <i class="iconfont icon-dizhi"></i>
+                    <!-- 地址 -->
+                    <span>湖南</span>
+                </a>
+                <div class="all-address"></div>
+            </div>
+            <!-- 右侧导航 -->
+            <ul class="right-nav">
+                <li class="login tap">
+                    <a href="#">你好，请登录</a>
+                    &nbsp;&nbsp;
+                    <a href="#" class="heightlight">免费注册</a>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <a href="#">我的订单</a>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap myjd">
+                    <div class="myjd-top">
+                        <a href="#">我的京东</a>
+                        <i class="iconfont icon-xiajiantou1
+                        fonts"></i>
+                    </div>
+                    <div class="myjd-bottom"></div>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <a href="#">京东会员</a>
+
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <a href="#" class="heightlight">企业采购</a>
+                    <i class="iconfont icon-xiajiantou1
+                    fonts"></i>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <div>
+                        客户服务
+                        <i class="iconfont icon-xiajiantou1
+                        fonts"></i>
+                    </div>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <div>
+                        网站导航
+                        <i class="iconfont icon-xiajiantou1
+                        fonts"></i>
+                    </div>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <div>
+                        手机京东
+                    </div>
+                </li>
+                <li class="spaces"></li>
+                <li class="tap">
+                    <a href="#">
+                        网站无障碍
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

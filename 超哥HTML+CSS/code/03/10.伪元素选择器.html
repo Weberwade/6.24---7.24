@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p{
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            font-size: 60px;
+            background-color: aqua;
+        }
+        p::selection{
+            background-color: blanchedalmond;
+        }
+        div::before{
+            content: '123';
+            background-color: aqua;
+        }
+        div::after{
+            content: '123';
+            background-color: aqua;
+        }
+        a::before{
+            content: '【';
+        }        
+        a::after{
+            content: '】';
+        }
+        
+        /* 
+        伪元素，表示页面中一些特殊并不真实存在的元素（特殊的位置）
+        */
+
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">aaaaa</a>
+    <div> Hello how are you </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, eligendi molestias odit dolores harum, saepe odio quod dolor inventore officia debitis, beatae ad neque velit quos accusantium totam sapiente facilis!
+    </p>
+</body>
+</html>

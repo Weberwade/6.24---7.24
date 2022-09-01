@@ -1,0 +1,30 @@
+{
+  "id": "3538620",
+  "name": "电影卡片",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1253",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5353505",
+      "name": "导航地址",
+      "font_class": "daohangdizhi",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "15378341",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "eb8d",
+      "unicode_decimal": 60301
+    }
+  ]
+}

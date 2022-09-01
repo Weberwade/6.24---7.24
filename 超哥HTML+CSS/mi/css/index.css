@@ -1,0 +1,786 @@
+/* index.html页面样式表 */
+
+/* 顶部导航条样式 */
+
+/* 导航条外层样式 */
+.topbar {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    position: relative;
+}
+
+/* 导航条层容器样式 */
+.inner-topbar {
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 导航条左边容器样式 */
+.left-bar {
+    float: left;
+    height: 40px;
+}
+
+/* 设置右侧的购物车 */
+.shoppingcar {
+    float: right;
+    text-align: center;
+    background-color: #424242;
+}
+
+/* 设置右侧容器内容 */
+.right-bar {
+    float: right;
+    height: 40px;
+    margin-right: 25px;
+}
+
+/* 设置顶部导航条每个a字体 */
+.inner-topbar a {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+/* 设置所有导航a标签字移入效果 */
+.inner-topbar a:hover {
+    color: #fff;
+}
+
+/* 设置所有的分隔符 */
+.sep {
+    font-size: 13px;
+    color: #424242;
+    margin: 0 4px;
+}
+
+/* 设置购物车字体图标样式 */
+.gouwuche>i {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+/* 设置购物车样式 */
+.shoppingcar .gouwuche {
+    display: block;
+    width: 120px;
+    height: 40px;
+}
+
+/* 购物车 下拉框设置 */
+
+/* 给购物车父元素开启相对定位 */
+.shoppingcar {
+    position: relative;
+}
+
+/* 设置购物车下拉框 */
+.shopingcar-foot {
+    width: 320px;
+    height: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* display: none; */
+    text-align: center;
+    z-index: 99999;
+    vertical-align: middle;
+    transition: height 0.3s;
+}
+
+/* 设置下拉框内字体颜色样式 */
+.shopingcar-foot span {
+    display: block;
+    color: #333;
+    font-size: 12px;
+    padding: 44px 0;
+    line-height: 1;
+}
+
+
+/* 设置购物车下拉框同时出现的按钮效果 */
+/* 鼠标移入购物车改变span字体颜色 */
+/* 鼠标移入购物车改变i字体图标颜色 */
+.shoppingcar:hover,
+.shoppingcar:hover .gouwuche span,
+.shoppingcar:hover .gouwuche i {
+    background-color: #fff;
+    color: #FF6700;
+}
+
+/* 鼠标移入购物车按钮,下拉框出现 */
+.shoppingcar:hover .shopingcar-foot {
+    height: 100px;
+}
+
+/* 鼠标移入,无缝衔接遮挡上边框 */
+.shoppingcar:hover .gouwuche {
+    position: relative;
+    z-index: 999999;
+    background-color: #fff;
+}
+
+/* 下载app 下拉框设置 */
+
+/* 为下载app开启相对定位 */
+.loadapp {
+    display: inline-block;
+    position: relative;
+}
+
+/* 设置下载app里的图片大小 */
+.loadapp-foot img {
+    width: 90px;
+    height: 90px;
+    margin: 19px 17px 0 19px;
+}
+
+/* 设置小米商城app字体 */
+.loadapp-foot span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 下载APP下拉框 */
+.loadapp .loadapp-foot {
+    position: absolute;
+    left: -40px;
+    top: 39px;
+    width: 124px;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* display: none; */
+    transition: height 0.3s;
+    z-index: 99999;
+    background-color: #fff;
+}
+
+/* 设置下拉框上的小尖 */
+.loadapp::after {
+    content: '';
+    /* 开启边框 */
+    border: 8px solid transparent;
+    /* 去除上边框 */
+    border-top: none;
+    /* 给下边框上色 */
+    border-bottom-color: #fff;
+    /* 开启定位调整位置 */
+    position: absolute;
+    /* 利用水平补全公式居中 */
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    /* 写死width让尖尖居中 */
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+/* 鼠标移入下载app时,下载app下拉框出现 */
+.loadapp:hover .loadapp-foot,
+.loadapp:hover::after {
+    height: 148px;
+    display: block;
+}
+
+/* 设置头部导航条 */
+
+/* 头部导航条外层容器 */
+.outer-header-nav {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+/* 头部导航条内层容器 */
+.header-nav {
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* 头部logo位置 */
+.left-logo {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    /* 隐藏文字 */
+    text-indent: -9999px;
+}
+
+/* 设置logo大小及背景色 */
+.moren-logo {
+    width: 55px;
+    height: 55px;
+    margin: 22.5px 0;
+    background-color: #FF6700;
+    border-radius: 35%;
+    position: relative;
+    transition: left 0.3s;
+}
+
+/* 设置logo的a元素让图片撑满点击效果 */
+.moren-logo .mi-logo {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/mi-logo.png);
+    background-position: center;
+    right: 0;
+    transition: right 0.4s;
+}
+
+/* 设置第二张图片 */
+.moren-logo .home {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url(../img/mi-home.png);
+    background-position: center;
+    right: 55px;
+    transition: right 0.4s;
+}
+
+/* 设置鼠标移入图片滚动效果 */
+.left-logo:hover .home {
+    right: 0;
+}
+
+.left-logo:hover .mi-logo {
+    right: -55px;
+}
+
+/* 小米logo整体移动突出效果 */
+.moren-logo:hover {
+    left: 1px;
+}
+
+/* 头部nav位置 */
+.center-nav {
+    height: 88px;
+    float: left;
+    padding-left: 30px;
+    padding-top: 12px;
+}
+
+/* 头部nav里的所有li浮动 */
+.nav-li {
+    float: left;
+
+}
+
+/* 设置隐藏全部商品分类 */
+.all-goods {
+    width: 127px;
+    text-align: right;
+    visibility: hidden;
+}
+
+/* 开启相对定位 让主页左侧导航条更好定位 */
+.all-goods-li {
+    position: relative;
+}
+
+/* 设置主页左侧导航条 */
+.all-goods-bar {
+    width: 234px;
+    height: 420px;
+    line-height: 1px;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 20px 0;
+    position: absolute;
+    left: -85px;
+    top: 88px;
+    z-index: 99;
+}
+
+/* 设置主页左侧导航条内部内容 */
+.all-goods-li .goods-div>a {
+    width: 204px;
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    padding: 0px 0 0 30px;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* 设置字体图标文位置大小 */
+.goods-div .icon-youjiantou {
+    float: right;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* 设置主页左侧导航条内部所有内容 hover效果 */
+.all-goods-li .goods-div>a:hover {
+    background-color: #FF6700;
+    color: #fff;
+}
+
+/* 左侧导航的右弹出层 */
+.all-goods-right {
+    width: 500px;
+    height: 459px;
+    /* background-color: red; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #E0E0E0;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 234px;
+    display: none;
+    z-index: 99;
+}
+
+/* 移入右弹出层弹出 */
+.goods-div:hover~.all-goods-right {
+    display: block;
+}
+
+/* 设置所有a内字体 */
+.nav-li>a {
+    font-size: 16px;
+    padding: 26px 10px 38px;
+    color: #463333;
+    display: block;
+}
+
+/* nav a的hover效果 */
+.nav-li a:hover {
+    color: #FF6700;
+}
+
+/* nav下拉框设置 */
+/* nav下拉框样式 */
+.nav-bar {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transition: height 0.3s;
+    z-index: 999;
+}
+
+/* nav下拉框显示 */
+.good-nav:hover~.nav-bar,
+.nav-bar:hover {
+    height: 228px;
+    border-top: 1px solid #E0E0E0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+/* 头部搜索框位置 */
+.right-search {
+    float: right;
+}
+
+/* 设置搜索框整体大小及位置 */
+.search {
+    width: 296px;
+    height: 50px;
+    margin: 25px 0;
+    position: relative;
+}
+
+/* 设置文本框大小 */
+.text {
+    width: 222px;
+    height: 46px;
+    font-size: 14px;
+    padding: 0px 10px;
+    line-height: 1;
+    border: 1px solid #E0E0E0;
+    float: left;
+    outline: none;
+}
+
+/* 设置button按钮 */
+.search-btn {
+    width: 52px;
+    height: 48px;
+    padding: 1px 6px;
+    border: 1px solid #E0E0E0;
+    background-color: #fff;
+    float: left;
+    border-left: none;
+    font-size: 25px;
+    color: #616161;
+}
+
+/* 设置btn内字体图标大小 */
+.search-btn i {
+    font-size: 25px;
+    color: #616161;
+}
+
+/* 鼠标移入边框变化 */
+.text:hover {
+    border: 1px solid #B0B0B0;
+}
+
+/* 鼠标移入text 按钮边框效果改变 */
+.text:hover+.search-btn {
+    border: 1px solid #B0B0B0;
+    border-left: none;
+}
+
+/* 改变按钮hover时效果 */
+.search-btn:hover {
+    border: 1px solid #FF6700;
+    background-color: #FF6700;
+    border-left: none;
+}
+
+/* 改变按钮hover时字体图标颜色 */
+.search-btn:hover i {
+    color: #fff;
+}
+
+/* 改变文本框高亮时的效果 */
+.text:focus {
+    border: 1px solid #FF6700;
+}
+
+/* 文本框高亮时按钮的效果 */
+.text:focus+.search-btn {
+    border: 1px solid #FF6700;
+    border-left: none;
+}
+
+/* 修改高亮时鼠标移入效果 */
+.text:focus:hover {
+    border: 1px solid #FF6700;
+    /* border-right: none; */
+}
+
+/* 右侧搜索框下拉框 */
+.search-down {
+    border: 1px solid #FF6700;
+    border-top: none;
+    display: none;
+    position: absolute;
+    top: 48px;
+    line-height: 30px;
+    font-size: 12px;
+    z-index: 9999;
+    background-color: #fff;
+}
+
+/* 设置 a 标签撑开宽度 整条都可以点 */
+.all-min-goods li a {
+    display: block;
+    width: 218px;
+    padding: 0 12px;
+}
+
+/* a 标签hover时改变背景颜色 */
+.all-min-goods li a:hover {
+    background-color: #FAFAFA;
+}
+
+/* text高亮时 下拉框出现 */
+.text:focus~.search-down {
+    display: block;
+}
+
+/* banner部分样式 */
+.banner-wapper {
+    height: 460px;
+    position: relative;
+}
+
+/* 轮播图外层 */
+.img-wapper {
+    width: 1226px;
+    height: 460px;
+}
+
+/* 设置轮播图图片大小 */
+.img-li>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 轮播图折叠 */
+.img-wapper .img-li {
+    position: absolute;
+}
+
+/* 设置导航点位置 */
+.point-nav {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+
+/* 设置图片上的导航点 */
+.point-nav a {
+    display: block;
+    float: left;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+/* 图片点亮所以导航点也会点亮 */
+.point-nav a:first-child{
+    background-color: #616161;
+}
+
+
+/* 设置banner导航点hover效果 */
+.point-nav a:hover {
+    background-color: #616161;
+}
+
+/* 设置banner左箭头位置 */
+.left-jt {
+    position: absolute;
+    top: 195.5px;
+    left: 234px;
+}
+
+/* 设置左箭头样式 */
+.left-jt>a {
+    display: block;
+    background-image: url(../img/icon-slides.png);
+    background-position: 82px 0;
+    width: 41px;
+    height: 69px;
+}
+
+/* 设置banner右箭头位置 */
+.right-jt {
+    position: absolute;
+    top: 195.5px;
+    right: 0px;
+}
+
+/* 设置右箭头样式 */
+.right-jt>a {
+    display: block;
+    background-image: url(../img/icon-slides.png);
+    background-position: 42px 0;
+    width: 41px;
+    height: 69px;
+}
+
+/* 设置banner左箭头位置hover */
+.left-jt>a:hover {
+    background-position: 0;
+}
+
+/* 设置banner右箭头位置hover */
+.right-jt>a:hover {
+    background-position: 124px 0;
+}
+
+/* 设置右侧页面固定用户导航位置 */
+.right-user {
+    border: 1px solid #F5F5F5;
+    width: 27px;
+    position: fixed;
+    bottom: 40px;
+    right: 50%;
+    margin-right: -642px;
+}
+
+/* 设置右侧页面固定用户导航通用样式 */
+.user-tool {
+    /* background-color: red; */
+    padding: 4px 0 4px 0;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+/* 设置右侧页面固定用户导航字体图标 */
+.user-tool>i {
+    font-size: 20px;
+    color: #C5C5C5;
+}
+
+/* 用户导航里所有i的hover效果 */
+.user-tool:hover>i {
+    color: #FF6700;
+}
+
+/* 给所有用户导航块开启定位 方便定位弹出层*/
+.user-tool {
+    position: relative;
+}
+
+/* phone的弹出层 */
+.phone-left-v {
+    width: 140px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: -153px;
+    text-align: center;
+    line-height: 20px;
+    display: none;
+    z-index: 99999;
+}
+
+/* phone弹出层图片设置 */
+.phone-left-v img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px 20px 20px;
+}
+
+/* 设置右侧小尖 */
+.user-phone:hover .phone-left-v::before {
+    display: block;
+    content: '';
+    border: 7px solid transparent;
+    /* border-right: none; */
+    border-left-color: #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 10px;
+    right: -14px;
+}
+
+/* hover时 phone弹出层弹出 */
+.user-phone:hover .phone-left-v {
+    display: block;
+}
+
+/* 设置所有通用弹出层 */
+.all-left {
+    position: absolute;
+    left: -93px;
+    top: 5px;
+    background-color: #fff;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: none;
+}
+
+/* 设置所有的尖尖 */
+.user-center .all-left::before,
+.shouhou .all-left::before,
+.kefu .all-left::before,
+.gouwu .all-left::before {
+    display: block;
+    content: '';
+    border: 7px solid transparent;
+    /* border-right: none; */
+    border-left-color: #fff;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 8px;
+    right: -14px;
+}
+
+/* hover时弹出层弹出 */
+.user-center:hover .user-center-left,
+.shouhou:hover .shouhou-left,
+.kefu:hover .keft-left,
+.gouwu:hover .gouwu-left {
+    display: block;
+}
+
+/* 设置广告区域外层包容块 */
+.guanggao-wapper {
+    height: 170px;
+    margin-top: 14px;
+}
+
+/* 广告左侧区域 */
+.guanggao-left {
+    width: 228px;
+    height: 164px;
+    background-color: #5F5750;
+    padding: 3px;
+    float: left;
+}
+
+/* 设置每一个li的位置及大小 */
+.anniu>.anniu-list {
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+    text-align: center;
+    position: relative;
+}
+
+/* 设置li中的a 占据的位置 */
+.anniu>.anniu-list>a {
+    display: block;
+    padding-top: 14px;
+    font-size: 12px;
+    color: #BCB8B6;
+}
+
+/* 设置所有 i 大小 */
+.anniu>.anniu-list>a>i {
+    font-size: 24px;
+    color: #BCB8B6;
+}
+
+/* 设置a标签的hover效果 */
+.anniu>.anniu-list>a:hover,
+.anniu>.anniu-list>a:hover>i {
+    color: #fff;
+}
+
+/* 给anniu-list加上伪类添加边框线 */
+.anniu-list::before {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 1px;
+    background-color: rgb(102, 94, 87);
+    margin: 0 3px;
+}
+
+/* 给anniu-list加上伪类添加边框线 */
+.anniu-list::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 70px;
+    background-color: rgb(102, 94, 87);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+/* 设置广告区图片大小 */
+.guanggao-img-list > a >img {
+    width: 316px;
+    height: 170px;
+}
+
+/* 第一个图片的margin比二三小 所以单独设置 */
+.guanggao-img .guanggao-img-list:first-child{
+    margin-left: 14px;
+}
+
+/* 设置广告区图片的排列guanggao-img-list */
+.guanggao-img-list{
+    float: left;
+    margin-left: 15px;
+}

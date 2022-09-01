@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="../CSS/reset/reset.css">
+    <style>
+        .outer{
+            width: 590px;
+            height: 470px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        .inner-img{
+            position: absolute;
+        }
+
+        .nav-point{
+            /* width: 113px; */
+            height: 15px;
+            line-height: 15px;
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+        }
+
+        .point{
+            float: left;
+            width: 7px;
+            height: 7px;
+            border: 3px solid transparent;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,.4);
+            /* 背景颜色只设置到内容区，边框和内边距不再有背景颜色 */
+            background-clip: content-box;
+            margin-right: 4px;
+        }
+
+        .active{
+            background-color: #fff;
+            border: 3px solid rgba(255,255,255,.3);
+        }
+
+        .point:hover{
+            background-color: #fff;
+            border: 3px solid rgba(255,255,255,.3);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner-img">
+            <a href="#">
+                <img src="./content/q.jpg" alt="tu">
+            </a>
+        </div>
+        <ul class="nav-point">
+            <li class="point active"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+        </ul>
+    </div>
+</body>
+</html>

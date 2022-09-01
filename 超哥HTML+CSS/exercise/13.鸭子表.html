@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0%;
+            perspective: 800px;
+        }
+
+        .outer-img{
+            width: 500px;
+            height: 500px;
+            background-image: url(./img/13/bg3.jpg);
+            margin: 50px auto;
+            border-radius: 50%;
+            position: relative;
+            background-size: cover;
+        }
+
+        .outer-img > div{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin:auto;
+        }
+
+        /* 时针外层 */
+        .hour-waper{
+            width: 60%;
+            height: 60%;
+            animation: run 7200s linear infinite;
+        }
+
+        /* 时针 */
+        .hour{
+            width: 5px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        /* 分针外层 */
+        .minute-waper{
+            width: 70%;
+            height: 70%;
+            animation: run 600s steps(60) infinite;
+        }
+
+        /* 分针 */
+        .minute{
+            width: 4px;
+            height: 50%;
+            background-color: black;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        /* 秒针外层 */
+        .sec-waper{
+            width: 80%;
+            height: 80%;
+            animation: run 10s linear infinite;
+        }
+        /* 秒针 */
+        .sec{
+            height: 50%;
+            width: 3px;
+            background-color: black;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+
+        @keyframes run {
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="outer-img">
+        <!-- 时钟 -->
+        <div class="hour-waper">
+            <div class="hour"></div>
+        </div>
+        <!-- 分针 -->
+        <div class="minute-waper">
+            <div class="minute"></div>
+        </div>
+        <!-- 秒针 -->
+        <div class="sec-waper">
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+</html>

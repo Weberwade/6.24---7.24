@@ -1,0 +1,13 @@
+body {
+  background-color: red;
+}
+body .box1 {
+  background-color: aqua;
+}
+body .box2 {
+  background-color: aquamarine;
+}
+.box5 {
+  width: 200px;
+  height: 200px;
+}

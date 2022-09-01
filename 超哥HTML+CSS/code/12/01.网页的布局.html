@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 重复代码整合一起 */
+        header,main,footer{
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 设置头部 */
+        header{
+            height: 200px;
+            background-color: silver;
+        }
+        
+        /* 设置主体 */
+        main{
+            height: 400px;
+            background-color: #bfa;
+            margin: 10px auto;
+        }
+        /* 提取重复代码 */
+        nav,article,aside{
+            height: 100%;
+            float: left;
+        }
+
+        /* 左侧导航 */
+        nav{
+            width: 200px;
+            background-color: yellow;
+        }
+
+
+        /* 中间内容 */
+        article{
+            width: 580px;
+            background-color: tomato;
+            margin: 0 10px;
+        }
+
+        /* 设置右侧边栏 */
+        aside{
+            width: 200px;
+            background-color: pink;
+        }
+        
+        /* 设置脚部 */
+        footer{
+            height: 200px;
+            background-color: orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 网页头部 -->
+    <header></header>
+
+    <!-- 网页的主体 -->
+    <main>
+        <!-- 左侧导航 -->
+        <nav></nav>
+        <!-- 中间的内容 -->
+        <article></article>
+        <!-- 右边边栏 -->
+        <aside></aside>
+    </main>
+
+    <!-- 网页的底部 -->
+    <footer></footer>
+</body>
+</html>

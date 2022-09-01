@@ -1,0 +1,36 @@
+.box1{
+    .box2{
+        color: red;
+    }
+    &:hover{
+        color: aqua;
+    }
+}
+
+
+.p1{
+    width: 200px;
+    height: 200px;
+}
+.p2{
+    .p1()
+}
+
+.p4(){
+    width: 200px;
+    height: 200px;
+    background-color: #bfa;
+}
+.p5{
+    .p4
+}
+
+// 混合函数
+.test(@w:400px,@e){
+    width: @w;
+    height: @e;
+    border: 1px solid red;
+}
+div{
+    .test(@e:200px;);
+}

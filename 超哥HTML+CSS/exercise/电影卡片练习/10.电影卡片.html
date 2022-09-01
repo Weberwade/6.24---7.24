@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/reset/reset.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        /* body {
+            background-color: #bfa; 
+        } */
+
+        /* 清除外边距重叠 */
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+
+        }
+
+        /* 外层容器 */
+        .outer {
+            width: 240px;
+            background-color: #FCFFFC;
+            margin: 20px auto;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 设置图片宽度 不让图片溢出 */
+        .top > img{
+            width: 100%;
+            vertical-align: bottom;
+        }
+
+        /* 设置中间内容区 */
+        .middle {
+            width: 204px;
+            border-bottom: 1px solid #EDF0ED;
+            padding: 0 18px;
+            color: #979795;
+        }
+
+        /* 设置标题位置样式 */
+        .title {
+            font-size: 17px;
+            color: #7B7E7B;
+            margin: 13px 0px 15px;
+        }
+
+        /* 设置地址字体图标 */
+        .address>i {
+            font-size: 12px;
+            color: #B1B3B0;
+        }
+
+        /* 设置文字内容位置样式 */
+        .content {
+            margin: 20px  0px ;
+            font-size: 12px;
+        }
+
+        /* 设置收藏区 */
+        .footer {
+            width: 240px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        /* 设置星星位置 */
+        .xingxing {
+            margin: 0px 15px;
+        }
+
+        /* 设置所有的星星样式 */
+        .xingxing>li {
+            float: left;
+            margin: 0 2px;
+            color: #D3D5D3;
+        }
+
+        /* 改变高亮星星的颜色 */
+        .xingxing .heightlight {
+            color: #B8C440;
+        }
+
+        /* 设置字体图标位置 */
+        .facebook {
+            float: right;
+            margin-right: 30px;
+        }
+
+        /* 设置字体图标颜色 */
+        .facebook-if {
+            font-size: 20px;
+            color: #D3D5D3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="top">
+            <img src="../img/10/1.jpg" alt="a">
+        </div>
+        <div class="middle">
+            <div class="title">
+                Animation films
+            </div>
+            <div class="address">
+                <i class="iconfont icon-daohangdizhi"></i>
+                <span> Animations</span>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis modi quae magnam
+            </div>
+        </div>
+        <div class="clearfix footer">
+            <ul class="xingxing">
+                <li>
+                    <i class="heightlight iconfont icon-shoucang
+                    "></i>
+                </li>
+                <li>
+                    <i class="heightlight iconfont icon-shoucang
+                    "></i>
+                </li>
+                <li>
+                    <i class="iconfont icon-shoucang
+                    "></i>
+                </li>
+                <li>
+                    <i class="iconfont icon-shoucang
+                    "></i>
+                </li>
+            </ul>
+            <div class=" facebook">
+                <a href="#">
+                    <i class="facebook-if iconfont icon-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

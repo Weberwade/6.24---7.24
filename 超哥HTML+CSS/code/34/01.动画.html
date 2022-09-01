@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: silver;
+        }
+        
+        .box1 div{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+        }
+        
+        .box2{
+            background-color: #bfa;
+            /* margin-left: 10px; */
+
+            /* 设置动画 */
+            animation-name: test;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: ; */
+            animation-fill-mode: both;
+        }
+
+        .box3{
+            background-color: orange;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+
+        /* .box1:hover div{
+            animation-play-state: paused;
+            
+        } */
+
+        @keyframes test {
+            /* from动画开始位置 */
+            from{
+                margin-left: 0px;
+            }
+            /* to表示动画结束位置 */
+            to{
+                margin-left: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+</body>
+</html>

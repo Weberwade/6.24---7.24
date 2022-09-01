@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@total-width: 750;
+@backc: #eff0f4;
+
+// 设置所有需要居中宽度相等的容器
+.w {
+    width: (693/40rem);
+    margin: 0 auto;
+}
+
+// 设配vw
+// 设置根元素
+html {
+    // 适配vw
+    // 1rem = 40px
+    // 新版less除法要加单位和括号
+    // 5.3333vw
+    font-size: (100vw /@total-width) * 40;
+    background-color: @backc;
+}
+
+
+// 设置头部样式
+.title:extend(.w) {
+    display: flex;
+    height: (175/40rem);
+    align-items: center;
+    justify-content: space-between;
+
+    // 设置a的字体颜色 及样式
+    a {
+        text-decoration: none;
+        color: #3f4055;
+        font-size: 50/40rem;
+    }
+
+    // 设置左右侧字体颜色
+    .nav-img>a,
+    .search>a {
+        color: #999;
+    }
+}
+
+// 设置banner
+.banner-wapper:extend(.w) {
+    height: (277/40rem);
+
+    img {
+        width: 100%;
+        height: (277/40rem);
+    }
+}
+
+// 设置mid-nav
+.mid-nav-wapper:extend(.w) {
+    height: (244/40rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: (40/40rem) auto (50/40rem) auto;
+
+    a {
+        width: (327/40rem);
+        height: (104/40rem);
+        line-height: (104/40rem);
+        text-decoration: none;
+        font-size: (30/40rem);
+        border-radius: (15/40rem);
+        color: #ffffff;
+
+        i {
+            margin: 0 (20/40rem) 0 (40/40rem);
+        }
+    }
+
+    .book {
+        background-color: #f97053;
+    }
+
+    .star {
+        background-color: #c85fff;
+    }
+
+    .bookmark {
+        background-color: #ff3971;
+    }
+
+    .download {
+        background-color: #1c97ff;
+    }
+
+}
+
+// 设置course
+.course-list-wapper:extend(.w) {    
+    .course-title {
+        display: flex;
+        width: 100%;
+        height: (28/40rem);
+        justify-content: space-between;
+        align-items: center;
+        border-left: 3px solid #3a84ff;
+
+        div {
+            font-size: (33/40rem);
+            color: #24253d;
+            margin-left: (17/40rem);
+        }
+
+        a {
+            font-size: (28/40rem);
+            text-decoration: none;
+            color: #656565;
+        }
+    }
+
+    .course-list {
+        display: flex;
+        overflow: auto;
+        width: (720/40rem);
+        .course {
+            flex: none;
+            width: (327/40rem);
+            height: (323/40rem);
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: (40/40rem) (24/40rem) (47/40rem) 0;
+
+            // 课程图片
+            .course-img {
+                margin: (20/40rem);
+
+                img {
+                    width: (285/40rem);
+                    height: (156/40rem);
+                    vertical-align: top;
+                }
+            }
+
+            // 课程名
+            .course-name {
+                font-size: (30/40rem);
+                text-align: center;
+                margin: (18/40rem) 0;
+            }
+
+            // 用户
+            .user{
+                display: flex;
+                margin-left: (20/40rem);
+                line-height: (41/40rem);
+                .avatar{
+                    img{
+                        width: (41/40rem);
+                        height: (41/40rem);
+                    }
+                }
+                .user-name{
+                    font-size: (24/40rem);
+                    margin-left: (15/40rem);
+                    color: #969494;
+                }
+            }
+
+        }
+    }
+}
